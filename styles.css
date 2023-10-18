@@ -7,8 +7,8 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF;
-    color: #2C3E50;
+    background-color: #031c34;
+    color: #ffffff;
     line-height: 1.6;
 }
 
@@ -16,7 +16,7 @@ body {
 .hero {
     padding: 100px 0;
     text-align: center;
-    background-color: #2C3E50;
+    background-color: #000000;
     color: #FFFFFF;
 }
 
@@ -30,12 +30,18 @@ body {
     text-align: center;
 }
 
+
 /* Portfolio Section */
-.project-card {
+.portfolio-container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 250px;            /* Adjust as needed */
+}
+
+.project-card {
+    width: 300px;
+    margin: 0 auto;
 }
 
 .project-card img {
@@ -74,60 +80,65 @@ footer {
     text-align: center;
 }
 
-/* Mobile Styles (Mobile-First) */
 
-.project-card {
-    flex-direction: column;
-    align-items: center;
-}
+/* Responsive styles start here */
 
-.project-card img {
-    margin: 20px 0;
-}
-
-.hero h1 {
-    font-size: 2em;
-}
-
-.about, .portfolio, .contact {
-    padding: 60px 20px;
-}
-
-footer {
-    padding: 20px;
-}
-
-/* Tablet Styles */
-@media (min-width: 768px) {
-    .hero h1 {
-        font-size: 2.5em;
+/* Small devices (tablets) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
     }
-    
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
     .about, .portfolio, .contact {
-        padding: 70px 40px;
-    }
-}
-
-/* Desktop Styles */
-@media (min-width: 992px) {
-    .hero h1 {
-        font-size: 3em;
+        padding: 60px 20px;
     }
 
     .project-card {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
 
     .project-card img {
-        margin-right: 20px;
-    }
-
-    .about, .portfolio, .contact {
-        padding: 80px 50px;
+        width: 200px;
+        height: 120px;
+        margin: 0 0 20px 0;
     }
 
     footer {
-        padding: 20px 50px;
+        padding: 10px 20px;
     }
 }
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .about, .portfolio, .contact {
+        padding: 40px 10px;
+    }
+
+    .project-card img {
+        width: 150px;
+        height: 90px;
+        margin-bottom: 15px;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 10px 10px;
+    }
+}
+
