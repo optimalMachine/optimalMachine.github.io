@@ -73,3 +73,61 @@ footer {
     color: #FFFFFF;
     text-align: center;
 }
+
+/* Mobile Styles (Mobile-First) */
+
+.project-card {
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card img {
+    margin: 20px 0;
+}
+
+.hero h1 {
+    font-size: 2em;
+}
+
+.about, .portfolio, .contact {
+    padding: 60px 20px;
+}
+
+footer {
+    padding: 20px;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    
+    .about, .portfolio, .contact {
+        padding: 70px 40px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .project-card {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .project-card img {
+        margin-right: 20px;
+    }
+
+    .about, .portfolio, .contact {
+        padding: 80px 50px;
+    }
+
+    footer {
+        padding: 20px 50px;
+    }
+}
