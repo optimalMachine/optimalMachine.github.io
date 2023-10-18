@@ -1,4 +1,4 @@
-# John Doe's Blockchain Portfolio
+# Jiuk's Blockchain Portfolio
 
 Hello! I'm Jiuk, a blockchain developer passionate about decentralized technologies and smart contract development. This repository showcases my projects, skills, and all things blockchain-related that I've worked on.
 
