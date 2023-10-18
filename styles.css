@@ -1,0 +1,75 @@
+/* General & Reset Styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #2C3E50;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #2C3E50;
+    color: #FFFFFF;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+/* About Section */
+.about, .portfolio, .contact {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+/* Portfolio Section */
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.project-card img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Contact Section */
+.contact a {
+    color: #E74C3C;
+    text-decoration: none;
+}
+
+/* CTA Button Style */
+.cta-button {
+    background-color: #E74C3C;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #C0392B;
+}
+
+/* Footer */
+footer {
+    padding: 20px 50px;
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    text-align: center;
+}
